@@ -21,7 +21,8 @@ namespace LocalChat
 
         public ChatClient(bool startImmediate)
         {
-			brodcastAddress = IPAddress.Parse("235.5.5.11");
+			//brodcastAddress = IPAddress.Parse("235.5.5.11");
+			brodcastAddress = IPAddress.Parse("192.168.0.255");
 			client = new UdpClient(localPort);
 			if (startImmediate) this.Run();
 			isActive = startImmediate;
